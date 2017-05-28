@@ -1,0 +1,37 @@
+<div class="row" id="charAttrSection">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">
+            Attributes
+            <span class="pull-right">
+                <i [ngClass]="{ 'fa-caret-square-o-up' : !isCollapsed, 'fa-caret-square-o-down': isCollapsed}" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample" class="fa"></i>
+            </span>    
+        </h4>      
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charStr">STR</label><input id="charStr" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charDex">DEX</label><input id="charDex" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charCon">CON</label><input id="charCon" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charInt">INT</label><input id="charInt" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charWis">WIS</label><input id="charWis" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charCha">CHA</label><input id="charCha" class="form-control" type="text">
+              </div>
+        </div>
+      </div>
+  </div>  
+</div>
+
+    
+      
+</div>

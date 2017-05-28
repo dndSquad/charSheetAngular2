@@ -1,0 +1,37 @@
+<div class="row" id="charSavingThrows">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="card" >
+      <div class="card-block">
+        <h4 class="card-title">
+            Saving Throws
+            <span class="pull-right">
+                <i [ngClass]="{ 'fa-caret-square-o-up' : !isCollapsed, 'fa-caret-square-o-down': isCollapsed}" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample" class="fa"></i>
+            </span>    
+        </h4>      
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charSavingStr">STR</label><input id="charSavingStr" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charSavingDex">DEX</label><input id="charSavingDex" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charSavingCon">CON</label><input id="charSavingCon" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charSavingInt">INT</label><input id="charSavingInt" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charSavingWis">WIS</label><input id="charSavingWis" class="form-control" type="text">
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" [ngbCollapse]="isCollapsed">
+                  <label for="charSavingCha">CHA</label><input id="charSavingCha" class="form-control" type="text">
+              </div>
+        </div>
+      </div>
+  </div>  
+</div>
+
+    
+      
+</div>
